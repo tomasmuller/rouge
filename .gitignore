@@ -4,3 +4,4 @@ log/*.log
 tmp/
 lib/*.jar
 .idea/
+rouge.war

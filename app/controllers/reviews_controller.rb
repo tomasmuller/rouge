@@ -28,6 +28,7 @@ class ReviewsController < ApplicationController
   # GET /reviews/new
   # GET /reviews/new.xml
   def new
+    @restaurants = Restaurant.alphabetized
     @review = Review.new
 
     respond_to do |format|

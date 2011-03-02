@@ -1,0 +1,14 @@
+== Rouge application 
+
+Rails app developed following the instructions of Using 'JRuby - Bringing Ruby to Java' book.
+
+This is a awesome book, highly recommended for anyone interested in JRuby world.
+
+== Modifications on the original application
+
+- Use of MySQL JDBC Connector with 'activerecord-jdbc-adapter' gem.
+Download it here: http://www.mysql.com/downloads/connector/j/
+After downloading, copy the .jar into /lib folder of the rails app.
+
+- Developed 'java_jar_dependencies.rb' initializer to load the java application dependencies, located at /lib folder.
+

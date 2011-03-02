@@ -1,0 +1,36 @@
+# If you are using derby, hsqldb, h2 or mssql with one of the ActiveRecord
+# JDBC adapters, configure your database setting as the example below:
+#
+#development:
+#  adapter: mssql
+#  username: <username>
+#  password: <password>
+#  hostname: localhost
+#  database: dummy
+
+# If you are using oracle, db2, sybase, informix or prefer to use the plain
+# JDBC adapter, configure your database setting as the example below (requires
+# you to download and manually install the database vendor's JDBC driver .jar
+# file). See your driver documentation for the apropriate driver class and
+# connection string:
+#
+development:
+  adapter: jdbc
+  username: root
+  password: '1234'
+  driver: com.mysql.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/tcc2_development?characterSetResults=UTF-8&characterEncoding=UTF-8&useUnicode=yes
+
+test:
+  adapter: jdbc
+  username: root
+  password: '1234'
+  driver: com.mysql.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/tcc2_test?characterSetResults=UTF-8&characterEncoding=UTF-8&useUnicode=yes
+
+production:
+  adapter: jdbc
+  username: root
+  password: '1234'
+  driver: com.mysql.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/tcc2_production?characterSetResults=UTF-8&characterEncoding=UTF-8&useUnicode=yes
